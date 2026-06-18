@@ -38,7 +38,7 @@ function LoginPage() {
                 <h1 className="text-2xl font-bold text-white mb-2">Welcome back</h1>
                 <p className="text-gray-400 mb-8">Log in to place bids and track auctions</p>
 
-                <a href="http://localhost:5000/api/auth/google" className="flex items-center justify-center gap-3 w-full bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg py-3 px-4 text-white font-medium transition-colors mb-6">
+                <a href={`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/auth/google`} className="flex items-center justify-center gap-3 w-full bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg py-3 px-4 text-white font-medium transition-colors mb-6">
                     <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" className="w-5 h-5" />
                     Continue with Google
                 </a>
